@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulario de Registro</h1>
+    <p>Por favor rellena todo este formulario con pleno cuidado</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+    <fieldset>
+      <label for="nombre"
+        >Ingresa tu nombre: <input id="nombre" type="text" required placeholder="Valentin" name="nom"
+      /></label>
+      <label for="apellido"
+        >Ingresa tu apellido: <input id="apellido" type="text" required placeholder="Lattanzio" name="apel"
+      /></label>
+      <label for="email"
+        >Ingresa tu email: <input id="email" type="email" required placeholder="valenlattanz@gmail.com" name="emai"
+      /></label>
+      <label for="contraseña"
+        >Crea una nueva contraseña:
+        <input id="contraseña" type="password" required pattern="[a-z0-5]{8,}" placeholder="********" name="contra"
+      /></label>
+    </fieldset>
+    <fieldset>
+      <label for="cuenta-personal"
+        ><input type="radio" name="tipo-cuenta" class="inline"/> Cuenta Personal</label
+      >
+      <label for="cuenta-negocio"
+        ><input type="radio" name="tipo-cuenta" class="inline"/> Cuenta de Negocio</label
+      >
+      <label for="terminos-condiciones" class="terms"
+        ><input type="checkbox" required name="termscondi" class="inline"/> Acepto los
+        <a href="https://www.google.com.ar/" target="_blank"
+          >terminos y condiciones</a
+        ></label
+      >
+    </fieldset>
+    <fieldset>
+      <label for="foto-perfil">Agrega una foto de perfil: <input type="file" id="foto-perfil"/></label>
+      <label for="age"
+        >Ingresar edad (años): <input type="number" min="13" max="120" id="age" name="ag"
+      /></label>
+      <label for="referencia">¿Donde escuchaste de nosotros?
+      <select name="refer" id="referencia">
+        <option value="">(Elige uno)</option>
+        <option value="">En tu casa</option>
+        <option value="">En internet</option>
+        <option value="">En una publicidad</option>
+        <option value="">En un cumpleaños</option>
+      </select>
+      <label for="bio">Escriba su biografia: <textarea id="bio" cols="30" rows="3" placeholder="Me gusta codear en Africa..." name="biog"></textarea></textarea></label>
+    </fieldset>
+  </label>
+    <input type="submit" value="Submit" />
+  </form>
+  </body>
+</html>
